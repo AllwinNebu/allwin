@@ -117,19 +117,26 @@ class Mark {
 main() {
   Mark mark1 = Mark();
 
-  for (var i = 1; i >= 0; i++) {
-    stdout.write(
-        'enter your choice \n type 1 to continue \n anything else to escape \n');
-    int cho = int.parse(stdin.readLineSync()!);
+  stdout.write('if you are teacher enter the keyword \n');
+  String keyword = stdin.readLineSync()!;
 
-    if (cho == 1) {
-      mark1.inputBasic();
-      mark1.inputMark();
-      mark1.inputExtraMark();
-      mark1.calculate();
-      mark1.output();
-    } else {
-      break;
+  if (keyword == 'teacher') {
+    for (var i = 1; i >= 0; i++) {
+      stdout.write(
+          'enter your choice CONTINUE to continue or anything else to end \n');
+      String cho = stdin.readLineSync()!;
+
+      if (cho == 'continue') {
+        mark1.inputBasic();
+        mark1.inputMark();
+        mark1.inputExtraMark();
+        mark1.calculate();
+        mark1.output();
+      } else {
+        break;
+      }
     }
+  } else {
+    print('You stupid student GET OUT!');
   }
 }
