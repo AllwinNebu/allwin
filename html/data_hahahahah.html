@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <title>Data Collector</title>
+    <head>
+        <title>  Covid data collection </title>
+    </head>
+    <body bgcolor="DimGray">
+        <CENTER >
+            <h3> Enter your details </h3>
+        </CENTER>
+
+        <form action="guestbook.php" method="get">
+
+            Name:&nbsp;
+            <input type="text" name="first" size="20"
+            maxlength="20" value="Name"> <br><br>
+
+            Age: &nbsp;
+            <input type="text" name="Age" size="20"
+            maxlength="2" value="Age"> <br><br>
+
+            No.of Members in family: &nbsp;
+            <input type="text" name="No.of Members in family" size="20"
+            maxlength="20" value="No.of Members in family"> <br><br>
+
+            PhoneNumber: &nbsp;
+            <input type="text" name="phoneNumber" size="20"
+            maxlength="10" value="phoneNumber"> <br><br>
+
+            Sex: &nbsp; &nbsp; &nbsp;
+            <input type="radio" name="Sex" value="male"> male
+            <input type="radio" name="sex" value="female"> female
+            <input type="radio" name="sex" value="None"> None 
+            <br><br>
+
+            RelationshipStatus: &nbsp; &nbsp;
+            <input type="radio" name="RelationshipStatus" value="Married"> Married
+            <input type="radio" name="RelationshipStatus" value="Single"> Single
+            <br><br>
+
+            Citizenship: &nbsp;
+            <input type="radio" name="Citizenship" value="Indian"> Indian
+            <input type="radio" name="Citizenship" value="Not an Indian"> Not an Indian
+            <br><br>
+
+            vaccinated: &nbsp;
+            <input type="radio" name="vaccinated" value="yes"> yes
+            <input type="radio" name="vaccinated" value="no"> No 
+            <br><br>
+            
+            <fieldset>
+                <legend> Nationality </legend>
+                <select name="Nationality" size="4">
+                    <option value="Indian" selected> Indian</option>
+                    <option value="British" selected > British</option>
+                    <option value="German" selected > German </option>
+                    <option value="Srilankan" selected > Srilankan </option>
+                    <option value="Irish" selected > Irish </option>
+                    <option value="American" selected > American </option>
+                    <option value="Canadian" selected > Canadian </option>
+                </select> <br><br> 
+
+                District: &nbsp;
+                <input type="text" name="state" size="15">
+            </fieldset> <br>
+
+            Reason for visit: &nbsp;
+            <input type="radio" name="Reason for visit" value="Marriage or other functions"> Marriage or other functions
+            <input type="radio" name="Reason for visit" value="hospital case or self health issue"> hospital case or self health issue
+            <input type="radio" name="Reason for visit" value="Retired"> Retired
+            <input type="radio" name="Reason for visit" value="leave"> leave
+            <input type="radio" name="Reason for visit" value="lost the job"> lost the job
+            <input type="radio" name="Reason for visit" value="none of the above"> none of the above
+            <br><br>
+
+            <textarea rows="5" cols="25" name="address"> address </textarea> <br><br>
+
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </form>
+    </body>
+</html>
