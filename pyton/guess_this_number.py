@@ -14,5 +14,9 @@ while 1>0:
          quit()  
         random_number=random.randint( 0,top_range)
         print(random_number)   
+        if top_range == random_number :
+            print("you lucky peice of shit")
+        else :
+            print("HA")    
     else:
         quit()    
