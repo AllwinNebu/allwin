@@ -10,7 +10,7 @@ while 1>0:
              print("type a number greather than 0 asshole")
              quit()
         else :
-         print("you fucking donkey this is a numer guess type a number idiot")
+         print("you fucking donkey this is a number guess thing, type a number idiot")
          quit()  
         random_number=random.randint( 0,top_range)
         print(random_number)   
