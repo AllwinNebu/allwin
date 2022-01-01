@@ -5,9 +5,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Dart & Flutter",
+            "name": "Dart",
+            "type": "dart",
             "request": "launch",
-            "type": "dart"
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.dart"
         }
+        
     ]
 }
