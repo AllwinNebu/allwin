@@ -12,7 +12,7 @@ while 1>0:
         else :
          print("you fucking donkey this is a number guess thing, type a number idiot")
          quit()  
-        random_number=random.randint( 0,top_range)
+        random_number=random.randint( 0,101)
         print(random_number)   
         if top_range == random_number :
             print("you lucky peice of shit")
