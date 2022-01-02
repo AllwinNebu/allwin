@@ -12,8 +12,16 @@ class Mark {
   var chem = 0;
   var mala = 0;
 
+  var total_comp = 0;
+  var total_mat = 0;
+  var total_eng = 0;
+  var total_phy = 0;
+  var total_chem = 0;
+  var total_mala = 0;
+
   var mark = 0;
   var average = 0.0;
+  var percentage = 0.0;
 
   var extra_mark_comp = 0;
   var extra_mark_mat = 0;
@@ -87,6 +95,21 @@ class Mark {
         this.extra_mark_phy;
 
     this.mark = a + b;
+
+    this.total_eng = this.eng + this.extra_mark_eng;
+    this.total_chem = this.chem + this.extra_mark_chem;
+    this.total_comp = this.comp + this.extra_mark_comp;
+    this.total_mala = this.mala + this.extra_mark_mala;
+    this.total_phy = this.phy + this.extra_mark_phy;
+    this.total_mat = this.mat + this.extra_mark_mat;
+
+    this.percentage = (this.total_chem +
+            this.total_comp +
+            this.total_eng +
+            this.total_mala +
+            this.total_mat +
+            this.total_phy) /
+        6;
   }
 
   void output() {
@@ -111,6 +134,7 @@ class Mark {
 
     print('$name  average mark is : $average');
     print('$name mark including the extra mark is : $mark');
+    print('$name total percentage is :  $percentage');
   }
 }
 
@@ -122,11 +146,10 @@ main() {
 
   if (keyword == 'teacher') {
     for (var i = 1; i >= 0; i++) {
-      stdout.write(
-          'enter your choice CONTINUE to continue or anything else to end \n');
+      stdout.write('Do you want to continue \n');
       String cho = stdin.readLineSync()!;
 
-      if (cho == 'continue') {
+      if (cho == 'yes') {
         mark1.inputBasic();
         mark1.inputMark();
         mark1.inputExtraMark();
