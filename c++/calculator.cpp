@@ -31,6 +31,7 @@ int main()
         default:
             cout << "please enter the given option";
             break;
+
     }
 
     return 0;
