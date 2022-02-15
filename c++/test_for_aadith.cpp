@@ -3,14 +3,14 @@ using namespace std;
 int main()
 {
     int a,b,c;
-    cout<<"Program to find the biggest of three numbers\n";
-    cout<<"Enter three number";
+    cout<<"Program to find the gretest number\n";
+    cout<<"enter three numbers";
     cin>>a>>b>>c;
     if(a>b&&a>c)
-        cout<<a<<"is big";
+        cout<<a<<"i bigger";
     else if(b>c)
-        cout<<b<<"is big";
+        cout<<b<<"is bigger";
     else
-        cout<<c<<"is big";
-    return 0;
+        cout<<c<<"is bigger";
+return 0;
 }
