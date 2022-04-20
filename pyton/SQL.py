@@ -2,16 +2,15 @@ import mysql.connector
 mydb = mysql.connector.connect(
     host = "localhost",
     user = "root",
-    password = "admin",
-    database = "test"
+    password = "myballs",
+    database = "big large balls"
 )
 def inputprogram():
     name = input("Enter Name \n")
     pn = input("Enter phone number \n")
-    tk = input("Enter token number \n")
     mycursor = mydb.cursor()
-    query = "INSERT INTO customerinfo (Name, PhoneNumber, TokenNumber) VALUES (%s, %s, %s);"
-    values = (name, pn, tk)
+    query = "INSERT INTO huge_balls (Name, phoneno) VALUES (%s, %s);"
+    values = (name, pn)
     mycursor.execute(query, values)
     mydb.commit()
 
