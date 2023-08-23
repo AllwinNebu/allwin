@@ -24,9 +24,9 @@ void subtract(int a[50][50], int b[50][50], int c[50][50],int row,int col )
 
 void multiply(int a[50][50], int b[50][50], int c[50][50],int row,int col)
 {
-    for(int i=0;i<=row;i++)
+    for(int i=0;i<row;i++)
    {
-   for (int j = 0; j <=col; j++)
+   for (int j = 0; j <col; j++)
    {
       c[i][j] = 0;
       for (int k = 0; k < row; k++)
@@ -36,11 +36,11 @@ void multiply(int a[50][50], int b[50][50], int c[50][50],int row,int col)
 }
 }
 
-void transpose(int a[3][3], int c[3][3])
+void transpose(int a[3][3], int c[3][3],int row , int col)
 {
-  for (int i = 0; i < 3; i++)
-    for (int j = 0; j < 3; j++)
-      c[i][j] = a[j][i];
+  for (int i = 0; i < row; i++){
+    for (int j = 0; j < col; j++){
+      c[i][j] = a[j][i];}}
 }
 
 void display(int matrix[3][3], int row, int col)
@@ -107,10 +107,10 @@ int main()
         break;
       case 4:
         printf("Transpose of the first matrix: \n");
-        transpose(a, c);
+        transpose(a, c,row,col);
         display(c,row,col);
         printf("Transpose of the second matrix: \n");
-        transpose(b, c);
+        transpose(b, c,row,col);
         display(c,row,col);
         break;
       case 5:
