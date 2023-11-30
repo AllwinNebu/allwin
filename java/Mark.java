@@ -41,7 +41,7 @@ public class Mark
           int a1 ,b1,c1;
 
           System.out.println("Enter your stupid name");
-          name1 = sc.next();
+          name1 = sc.nextLine();
 
           System.out.println("enter your age");
           age1 = sc.nextInt();
