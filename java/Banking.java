@@ -1,4 +1,4 @@
-package All010;
+
 
 import java.util.Scanner;
 

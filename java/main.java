@@ -1,7 +1,4 @@
 
-
-
-
 class Employee {
     String Name;
     int Age;
@@ -42,7 +39,7 @@ class Manager extends Employee {
 
 
 public class main {
-    public static void main(String[] args) {
+    public static void main (String[] args) {
         Officer officer = new Officer("John Doe", 30, "123-456-7890", "123 Main St", 60000.0, "IT");
         Manager manager = new Manager("Jane Smith", 35, "987-654-3210", "456 Elm St", 80000.0, "Finance");
         System.out.println("Officer Details:");

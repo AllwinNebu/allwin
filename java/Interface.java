@@ -8,7 +8,6 @@ abstract class Animal
 	abstract void eat();
 	void walk()
 	{
-		
 	}
 }
 class Spider extends Animal
