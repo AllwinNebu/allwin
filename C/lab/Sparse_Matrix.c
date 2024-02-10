@@ -5,6 +5,7 @@ struct sparse {
  int value;
 };
 struct sparse s[20];
+
 void sparse_matrix( int rows,int col,int ar[rows][col]) {
         int count=0, k=1;;
          for(int i=0;i<rows;i++) 
