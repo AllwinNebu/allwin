@@ -63,7 +63,8 @@ void convert(char infix[])
         }
         else if(isalnum(character))
         {
-            postfix[j++]=character;
+            postfix[j]=character;
+            j++;
         }
 
         else if(character==')')
@@ -93,7 +94,7 @@ void convert(char infix[])
 
 void main()
 {
-    char infix[100],postfix[100];
+    char infix[100];
     printf("Enter the postfox expression : ");
     scanf("%d",&infix);
     convert(infix);
