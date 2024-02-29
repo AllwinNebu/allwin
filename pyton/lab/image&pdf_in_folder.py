@@ -6,7 +6,7 @@ def list_images_and_pdfs(directory):
         print(f"Directory '{directory}' does not exist.")
         return
     files = os.listdir(directory)
-    image_extensions = ['.jpg', '.jpeg', '.png', '.gif', '.bmp','.raw','.HEIC','.HEIF']
+    image_extensions = ['.jpg', '.jpeg', '.png', '.gif', '.bmp','.raw','.HEIC','.HEIF',]
     pdf_extensions = ['.pdf']
 
     image_files = [file for file in files if any(file.lower().endswith(ext) for ext in image_extensions)] #for extensions with lovercase
