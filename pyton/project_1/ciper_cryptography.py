@@ -24,8 +24,8 @@ def main():
         decrypted_message = caesar_decrypt(encrypted_message, key)
         print(f'Decrypted message: {decrypted_message}')
     else:
-        key = random.randint(1, 1000000000005)  
-        
+        key = random.randint(1725, 13476456239462937347945)  
+        print(key)
         encrypted_message = caesar_encrypt(message, key)
         print(f'Encrypted message: {encrypted_message}')
         decrypted_message = caesar_decrypt(encrypted_message, key)
