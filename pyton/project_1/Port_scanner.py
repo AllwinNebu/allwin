@@ -3,14 +3,18 @@ import pyfiglet
 import socket
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor
+import threading
+
+syn = threading.Lock()
 
 def scan(port):
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     socket.setdefaulttimeout(0.5)
     result = s.connect_ex((target, port))
     if result == 0:
-        print("[*] Port {} is open ".format(port))
-        print("Searching.......")
+        with syn:
+            print("[*] Port {} is open ".format(port))
+            print("Searching.......")
     s.close()
 
 if __name__ == "__main__":
