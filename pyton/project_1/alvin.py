@@ -24,8 +24,7 @@ def main():
         decrypted_message = caesar_decrypt(encrypted_message, key)
         print(f'Decrypted message: {decrypted_message}')
     else:
-        key = random.randint(1725, 13476456239462937347945)  
-        print(key)
+        key = random.randint(1, 25)  # Use randint to generate a random integer between 1 and 25
         encrypted_message = caesar_encrypt(message, key)
         print(f'Encrypted message: {encrypted_message}')
         decrypted_message = caesar_decrypt(encrypted_message, key)
