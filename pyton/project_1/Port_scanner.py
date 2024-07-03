@@ -28,7 +28,7 @@ if __name__ == "__main__":
     print("_" * 50)
 
     try:
-        with ThreadPoolExecutor(max_workers=1000) as executor:
+        with ThreadPoolExecutor(max_workers= 65536) as executor:
             ports = range(1, 65536)
             executor.map(scan, ports)
     except KeyboardInterrupt:
