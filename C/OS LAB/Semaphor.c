@@ -1,10 +1,8 @@
 #include<stdio.h>
-
 int mutex=1;
 int full=0;
 int empty=5;
 int x=0;
-
 void producer()
 {
     --mutex;
@@ -14,7 +12,6 @@ void producer()
     printf("producer produce item %d \n",x);
     ++mutex;
 }
-
 void consumer()
 {
     --mutex;
@@ -24,7 +21,6 @@ void consumer()
     x--;
     ++mutex;
 }
-
 int main()
 {
     int n,i;
